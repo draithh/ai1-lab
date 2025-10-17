@@ -1,0 +1,87 @@
+body {
+    font-family: "Courier New", monospace;
+    background: url('images/bg-old.jpg') repeat; /* tło starego papieru */
+    color: #000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header, footer {
+    background-color: rgba(200, 180, 150, 0.8); /* lekko pergaminowe */
+    padding: 10px;
+    text-align: center;
+    border: 3px ridge #a08050;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-shadow: 1px 1px 0 #fff8dc;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #5a3e1b;
+    text-shadow: 1px 1px 0 #fff8dc;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #4b2f1c;
+}
+
+
+section {
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid #a08050;
+    border-radius: 8px;
+    background-color: rgba(255, 248, 220, 0.8);
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    header, footer {
+        padding: 25px 15px;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    section {
+        width: 95%;
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    footer p {
+        font-size: 2.2rem;
+    }
+
+    ul {
+        font-size: 1.1rem;
+        padding-left: 15px;
+    }
+}

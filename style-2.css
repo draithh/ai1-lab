@@ -1,0 +1,148 @@
+body {
+    font-family: "Orbitron", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #e0e0ff;
+    background: radial-gradient(circle at top, #000010, #000033 70%);
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    padding: 60px 20px;
+    text-align: center;
+    background: url('images/space-header.jpg') no-repeat center center/cover;
+    color: #81d4fa;
+    position: relative;
+    animation: fadeInDown 1s ease forwards;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.section {
+    background: rgba(0,0,50,0.7);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(79,195,247,0.7);
+    padding: 20px;
+    width: 45%;
+    min-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(79,195,247,0.9);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #4fc3f7;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #b3e5fc;
+    margin-top: 10px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    flex: 1 1 calc(50% - 10px);
+    background: rgba(30,30,60,0.8);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(79,195,247,0.7);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,30,0.9);
+    border-top: 2px solid #4fc3f7;
+}
+
+@keyframes fadeInDown {
+    0% {opacity: 0; transform: translateY(-50px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+@media (hover: none) and (pointer: coarse) {
+    body {
+        font-size: 1.3rem;
+    }
+
+    header {
+        padding: 100px 10px;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        width: 95%;
+        min-width: auto;
+        margin: 15px auto;
+        padding: 25px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 2rem;
+        line-height: 2;
+    }
+
+    ul {
+        flex-direction: column;
+        font-size: 2rem;
+        padding-left: 15px;
+    }
+
+    footer {
+        padding: 50px 10px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 1.8rem;
+    }
+}
+
+
+
