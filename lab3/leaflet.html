@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maps with Leaflet</title>
+    <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
+    <script src="leaflet-1.7.1/leaflet-src.js"></script>
+    <script src="leaflet-1.7.1/leaflet-providers.js"></script>
+    <script src="leaflet-1.7.1/leaflet-image.js"></script>
+    <script src="script.js" defer></script>
+
+    <style>
+        #map {
+            width: 800px;
+            height: 500px;
+            border: 1px solid black;
+        }
+
+        #rasterMap {
+            width: 800px;
+            height: 500px;
+            border: 1px solid black;
+        }
+        #gora{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="gora">
+        <div id="map"></div>
+        <canvas id="rasterMap"></canvas>
+    </div>
+    <button id="getLocation">Get Current Location</button>
+    <button id="saveButton">Save Raster Map</button>
+    <div id="piecesContainer"></div>
+</body>
+</html>
