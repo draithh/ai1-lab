@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pogoda</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pogoda</h1>
+    </header>
+    <main>
+        <section id="top-section">
+            <input type="text" id="city-input" placeholder="Wprowadź miasto...">
+            <button id="get-weather-btn">Pogoda</button>
+        </section>
+
+        <section id="current-weather">
+            <h2>Bieżąca pogoda</h2>
+            <div id="current-weather-data" class="weather-block">
+                <div class="weather-left">
+                    <small>—</small>
+                </div>
+                <img class="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="ikonka"/>
+                <div class="temp-wrapper">
+                    <div class="temperature">- &deg;C</div>
+                    <div class="feels-like">Odczuwalna: - &deg;C</div>
+                </div>
+                <div class="weather-description">-</div>
+            </div>
+        </section>
+
+        <section id="forecast">
+            <h2>Forecast</h2>
+
+            <div id="forecast-data-1" class="weather-block">
+                <div class="weather-left"><small>—</small></div>
+                <img class="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="ikonka"/>
+                <div class="temp-wrapper">
+                    <div class="temperature">- &deg;C</div>
+                    <div class="feels-like">Odczuwalna: - &deg;C</div>
+                </div>
+                <div class="weather-description">-</div>
+            </div>
+
+            <div id="forecast-data-2" class="weather-block">
+                <div class="weather-left"><small>—</small></div>
+                <img class="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="ikonka"/>
+                <div class="temp-wrapper">
+                    <div class="temperature">- &deg;C</div>
+                    <div class="feels-like">Odczuwalna: - &deg;C</div>
+                </div>
+                <div class="weather-description">-</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
