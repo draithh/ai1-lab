@@ -121,7 +121,7 @@ class WeatherApp {
 }
 
 // inicjalizacja i listener
-var apiKey = "";
+var apiKey = "51d01012ffaebac39e3d010a39d113ff";
 
 document.weatherApp = new WeatherApp(apiKey, '#current-weather', '#forecast');
 
